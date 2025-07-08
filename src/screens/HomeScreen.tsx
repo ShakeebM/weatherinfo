@@ -21,7 +21,6 @@ const HomeScreen = () => {
   };
 
   React.useEffect(() => {
-    console.log('Selected city:', city);
     if (city) {
       dispatch(fetchWeatherData(city));
     }
