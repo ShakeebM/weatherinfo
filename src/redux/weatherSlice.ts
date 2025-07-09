@@ -28,7 +28,6 @@ export const weatherSlice = createSlice({
     initialState,
     reducers: {
         selectCity: (state, action) => {
-            console.log('Selected city:@@', action.payload);
             state.selectedCity = action.payload;
         },
         setWeatherReport: (state, action) => {
